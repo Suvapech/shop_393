@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลางหน้าแนวนอน */
+  flex-direction: column; /* เรียงลูกในแนวตั้ง */
+  font-family: 'Itim', sans-serif; /* Font style */
+  background: linear-gradient(to bottom right, #ffdee9, #b5fffc, #ffefb7); /* ไล่เฉดสีพร้อมภาพพื้นหลัง */
+}
+
+.root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1em; /* ลดขนาด padding บนหน้าจอเล็ก */
+  }
+
+  .logo {
+    height: 4em; /* ลดขนาดโลโก้ */
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
